@@ -4,7 +4,9 @@ An application to save list of users to database and fetch the name of users, so
 
 ## Description
 
-In the applicattion,
+In the applicattion, there are two api's exposed. 
+* Save user api - This takes a list of UserData class as argument and saves this details to the database.
+* Fetch user data api- This api takes two parameters in the request which acts as the minimum and maximum value of a range of postcode . The api returns sorted list of names of  users that belong to that specified postcode range alongwith the total character count of all the names in the list.
 
 ## Getting Started
 
@@ -40,8 +42,8 @@ All the dependencies are updated in the pom.xml file
 
 * The application will be available at ```localhost:{port}```
 * From postman, this can be verified by hitting this corresponding endpoints. 
-* CURL for the exposed apis:
-      * Save user api - 
+* CURL for save user api - 
+
 ```curl --location --request POST 'localhost:8080/api/users' \
 --header 'Content-Type: application/json' \
 --data-raw '[{
@@ -58,7 +60,7 @@ All the dependencies are updated in the pom.xml file
 }]'
 ```
 
-    * Fetch userData api :
+* Fetch userData api :
     ```curl --location --request GET 'localhost:8080/api/userdata?minValue={}&maxValue={}' \--data-raw ''```
 
 ### Test Cases
