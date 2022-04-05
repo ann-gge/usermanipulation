@@ -59,7 +59,7 @@ All the dependencies are updated in the pom.xml file
     "postcode":"13000"
 }]'
 ```
-The usernames and postcodes and their number in the list can be changed as per user convinience.
+The usernames and postcodes and the number of userdata object can be changed as per user convinience.
 * Fetch userData api :
     ```curl --location --request GET 'localhost:8080/api/userdata?minValue={}&maxValue={}'```
 
