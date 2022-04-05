@@ -55,7 +55,8 @@ All the dependencies are updated in the pom.xml file
 {
     "name":"C",
     "postcode":"13000"
-}]'```
+}]'
+```
 
     * Fetch userData api :
     ```curl --location --request GET 'localhost:8080/api/userdata?minValue={}&maxValue={}' \--data-raw ''```
