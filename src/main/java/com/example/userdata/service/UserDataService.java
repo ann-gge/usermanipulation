@@ -35,7 +35,7 @@ public class UserDataService implements IUserDataService{
         }
         catch (Exception e)
         {
-        LOGGER.error("Exception occurred while saving the entity "+e);
+        LOGGER.error("Exception occurred while saving the entity ",e);
         throw e;
         }
     }
